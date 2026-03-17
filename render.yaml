@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: portfolio-spa
+    env: docker
+    dockerContext: .
+    dockerfilePath: Dockerfile
+    plan: free
