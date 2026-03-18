@@ -5,3 +5,6 @@ services:
     dockerContext: .
     dockerfilePath: Dockerfile
     plan: free
+    domains:
+      - alegentai.com
+      - www.alegentai.com
