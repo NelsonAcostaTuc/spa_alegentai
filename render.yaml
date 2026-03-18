@@ -1,10 +1,13 @@
 services:
-  - type: web
-    name: portfolio-spa
-    env: docker
-    dockerContext: .
-    dockerfilePath: Dockerfile
-    plan: free
+  - type: static
+    name: spa_alegentai
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
     domains:
       - alegentai.com
       - www.alegentai.com
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
