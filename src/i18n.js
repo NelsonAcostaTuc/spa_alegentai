@@ -18,6 +18,8 @@ const resources = {
       "project1.desc": "AI-Powered Customer Success Platform",
       "project2.title": "Automated Data Analysis",
       "project2.desc": "Machine Learning Dashboard Toolkit",
+      "project3.title": "AI Medical Image Analysis",
+      "project3.desc": "GenAI application for X-Ray analysis and automated diagnostic reporting based on visual observations.",
       "contact.title": "Ready to start your project?",
       "contact.button": "Contact us on WhatsApp"
     }
@@ -37,6 +39,8 @@ const resources = {
       "project1.desc": "Plataforma de Éxito del Cliente potenciada por IA",
       "project2.title": "Análisis de Datos Automatizado",
       "project2.desc": "Kit de herramientas para Dashboards de Machine Learning",
+      "project3.title": "Análisis de Imágenes Médicas (GenAI)",
+      "project3.desc": "Aplicación de IA Generativa para analizar radiografías (Rayos X) y emitir opiniones diagnósticas sobre lo que observa.",
       "contact.title": "¿Listo para comenzar tu proyecto?",
       "contact.button": "Contáctanos por WhatsApp"
     }
@@ -56,6 +60,8 @@ const resources = {
       "project1.desc": "KI-gestützte Customer Success Plattform",
       "project2.title": "Automatisierte Datenanalyse",
       "project2.desc": "Machine Learning Dashboard Toolkit",
+      "project3.title": "KI-Medizinische Bildanalyse",
+      "project3.desc": "GenAI-Anwendung zur Röntgenanalyse und automatisierten Diagnoseberichterstattung basierend auf visuellen Beobachtungen.",
       "contact.title": "Bereit, Ihr Projekt zu starten?",
       "contact.button": "Kontaktieren Sie uns über WhatsApp"
     }
@@ -75,6 +81,8 @@ const resources = {
       "project1.desc": "Plateforme de Succès Client propulsée par l'IA",
       "project2.title": "Analyse de Données Automatisée",
       "project2.desc": "Boîte à outils de tableau de bord d'Apprentissage Automatique",
+      "project3.title": "Analyse d'Images Médicales par l'IA",
+      "project3.desc": "Application GenAI pour l'analyse des radiographies (Rayons X) et la génération de rapports de diagnostic automatisés.",
       "contact.title": "Prêt à commencer votre projet ?",
       "contact.button": "Contactez-nous sur WhatsApp"
     }
