@@ -66,6 +66,16 @@ function App() {
           <div className="projects-grid">
             <div className="project-card">
               <video autoPlay loop muted playsInline controls>
+                <source src="/analyze_image.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="project-info">
+                <h3>{t('project4.title')}</h3>
+                <p>{t('project4.desc')}</p>
+              </div>
+            </div>
+            <div className="project-card">
+              <video autoPlay loop muted playsInline controls>
                 <source src="/detect_imagen.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
