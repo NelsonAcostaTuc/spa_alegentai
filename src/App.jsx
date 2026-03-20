@@ -84,25 +84,6 @@ function App() {
                 <p>{t('project3.desc')}</p>
               </div>
             </div>
-            <div className="project-card">
-              <video autoPlay loop muted playsInline>
-                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <div className="project-info">
-                <h3>{t('project1.title')}</h3>
-                <p>{t('project1.desc')}</p>
-              </div>
-            </div>
-            <div className="project-card">
-              <video autoPlay loop muted playsInline>
-                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-              </video>
-              <div className="project-info">
-                <h3>{t('project2.title')}</h3>
-                <p>{t('project2.desc')}</p>
-              </div>
-            </div>
           </div>
         </section>
       </main>
