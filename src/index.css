@@ -21,6 +21,7 @@ body {
   color: var(--color-text);
   font-family: var(--font-body);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -289,7 +290,7 @@ a {
   .navbar nav {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: -260px;
     width: 250px;
     height: 100vh;
     background: var(--color-surface);
