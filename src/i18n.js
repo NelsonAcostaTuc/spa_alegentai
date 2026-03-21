@@ -20,6 +20,8 @@ const resources = {
       "project4.desc": "GenAI-powered application for analyzing statements, forecasting trends, and intelligent market insights.",
       "project5.title": "Vibecoding Platform",
       "project5.desc": "Platform to generate simple applications through prompts, to share and increase enterprise productivity. The generated app is deployed with a single click.",
+      "project6.title": "Intelligent Data Analysis Dashboard",
+      "project6.desc": "This is an Intelligent Data Analysis Dashboard. As a user, you upload your file (Excel or CSV) and ask direct questions in natural language. In the background, Azure OpenAI interprets your query, and E2B safely and automatically executes Python code to create and return the chart you requested, all in seconds and without needing to know how to code.",
       "contact.title": "Ready to start your project?",
       "contact.button": "Contact us on WhatsApp"
     }
@@ -41,6 +43,8 @@ const resources = {
       "project4.desc": "Aplicación financiera impulsada por GenAI para el análisis de transacciones, predicción de tendencias y reportes de mercado inteligentes.",
       "project5.title": "Plataforma Vibecoding",
       "project5.desc": "Plataforma para generar por medio de prompts, aplicaciones simples y sencillas, para compartir y aumentar la productividad en una empresa. El despliegue de la app generada es por medio de un simple clic.",
+      "project6.title": "Dashboard Inteligente de Análisis de Datos",
+      "project6.desc": "Este es un Dashboard Inteligente de Análisis de Datos. Como usuario, subes tu archivo (Excel o CSV) y le haces preguntas directas en lenguaje natural. Por detrás, la IA de Azure OpenAI interpreta tu consulta y E2B ejecuta código Python automáticamente de forma segura para crear y devolverte el gráfico que pediste, todo en segundos y sin necesidad de saber programar.",
       "contact.title": "¿Listo para comenzar tu proyecto?",
       "contact.button": "Contáctanos por WhatsApp"
     }
@@ -62,6 +66,8 @@ const resources = {
       "project4.desc": "GenAI-gestützte Finanzanwendung zur Analyse von Kontoauszügen, Trendprognosen und intelligenten Marktanalysen.",
       "project5.title": "Vibecoding Plattform",
       "project5.desc": "Plattform zur Generierung einfacher Anwendungen durch Prompts, zum Teilen und zur Steigerung der Unternehmensproduktivität. Die Bereitstellung der generierten App erfolgt mit einem einzigen Klick.",
+      "project6.title": "Intelligentes Datenanalyse-Dashboard",
+      "project6.desc": "Dies ist ein intelligentes Dashboard zur Datenanalyse. Als Benutzer laden Sie Ihre Datei (Excel oder CSV) hoch und stellen direkte Fragen in natürlicher Sprache. Im Hintergrund interpretiert die Azure OpenAI-KI Ihre Anfrage, und E2B führt automatisch und sicher Python-Code aus, um das gewünschte Diagramm in Sekundenschnelle zu erstellen und zurückzugeben, ganz ohne Programmierkenntnisse.",
       "contact.title": "Bereit, Ihr Projekt zu starten?",
       "contact.button": "Kontaktieren Sie uns über WhatsApp"
     }
@@ -83,6 +89,8 @@ const resources = {
       "project4.desc": "Application financière propulsée par GenAI pour l'analyse des relevés, la prévision des tendances et les analyses de marché intelligentes.",
       "project5.title": "Plateforme Vibecoding",
       "project5.desc": "Plateforme pour générer des applications simples via des prompts, à partager et pour augmenter la productivité de l'entreprise. Le déploiement de l'application générée se fait en un seul clic.",
+      "project6.title": "Tableau de Bord Intelligent d'Analyse de Données",
+      "project6.desc": "Il s'agit d'un tableau de bord intelligent d'analyse de données. En tant qu'utilisateur, vous téléchargez votre fichier (Excel ou CSV) et posez des questions directes en langage naturel. En arrière-plan, l'IA Azure OpenAI interprète votre requête et E2B exécute automatiquement et en toute sécurité du code Python pour créer et renvoyer le graphique que vous avez demandé, le tout en quelques secondes et sans nécessiter de compétences en programmation.",
       "contact.title": "Prêt à commencer votre projet ?",
       "contact.button": "Contactez-nous sur WhatsApp"
     }
