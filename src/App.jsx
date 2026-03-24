@@ -159,7 +159,7 @@ function App() {
               </div>
               <div className="project-video-wrapper">
                 <video autoPlay loop muted playsInline controls>
-                  <source src="/TerraceM-3_Example.mp4" type="video/mp4" />
+                  <source src="/terracem3.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
