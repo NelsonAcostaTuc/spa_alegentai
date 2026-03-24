@@ -24,6 +24,8 @@ const resources = {
       "project6.desc": "This is an AI Data Analysis Dashboard. As a user, you upload your file (Excel or CSV) and ask direct questions in natural language. In the background, Azure OpenAI interprets your query, and E2B safely and automatically executes Python code to create and return the chart you requested, all in seconds and without needing to know how to code.",
       "project7.title": "Real-time Object Tracking",
       "project7.desc": "Object Tracking in action: Computer vision pipeline operating in real-time. The YOLOv8 neural network handles frame-by-frame detection, while the ByteTrack algorithm assigns unique IDs and maintains the exact track of each moving element.",
+      "project8.title": "TerraceM-3: Satellite AI Assistant",
+      "project8.desc": "TerraceM-3 allows you to 'chat' with the precision of the ICESat-2 satellite to understand our planet instantly. It transforms complex laser measurements into visual charts and clear answers, eliminating the technical barrier forever. It is the intelligent assistant that turns scientific data into fast, simple, and actionable decisions. With TerraceM-3, advanced satellite science is now as simple as having a conversation...",
       "contact.title": "Ready to start your project?",
       "contact.button": "Contact us on WhatsApp"
     }
@@ -49,6 +51,8 @@ const resources = {
       "project6.desc": "Este es un Dashboard de IA para Análisis de Datos. Como usuario, subes tu archivo (Excel o CSV) y le haces preguntas directas en lenguaje natural. Por detrás, la IA de Azure OpenAI interpreta tu consulta y E2B ejecuta código Python automáticamente de forma segura para crear y devolverte el gráfico que pediste, todo en segundos y sin necesidad de saber programar.",
       "project7.title": "Object Tracking en Tiempo Real",
       "project7.desc": "Object Tracking en acción: Pipeline de visión computacional operando en tiempo real. La red neuronal YOLOv8 se encarga de la detección cuadro por cuadro, mientras que el algoritmo ByteTrack asigna IDs únicos y mantiene el rastro exacto de cada elemento en movimiento.",
+      "project8.title": "TerraceM-3: Asistente Satelital con IA",
+      "project8.desc": "TerraceM-3 te permite \"chatear\" con la precisión del satélite ICESat-2 para entender nuestro planeta al instante. Transforma mediciones láser complejas en gráficos visuales y respuestas claras, eliminando la barrera técnica para siempre. Es el asistente inteligente que convierte datos científicos en decisiones rápidas, sencillas y accionables. Con TerraceM-3, la ciencia satelital avanzada ahora es tan simple como tener una conversación...",
       "contact.title": "¿Listo para comenzar tu proyecto?",
       "contact.button": "Contáctanos por WhatsApp"
     }
@@ -74,6 +78,8 @@ const resources = {
       "project6.desc": "Dies ist ein KI-Dashboard zur Datenanalyse. Als Benutzer laden Sie Ihre Datei (Excel oder CSV) hoch und stellen direkte Fragen in natürlicher Sprache. Im Hintergrund interpretiert die Azure OpenAI-KI Ihre Anfrage, und E2B führt automatisch und sicher Python-Code aus, um das gewünschte Diagramm in Sekundenschnelle zu erstellen und zurückzugeben, ganz ohne Programmierkenntnisse.",
       "project7.title": "Echtzeit-Objektverfolgung",
       "project7.desc": "Objektverfolgung in Aktion: Computer Vision-Pipeline, die in Echtzeit arbeitet. Das neuronale Netzwerk YOLOv8 übernimmt die bildweise Erkennung, während der ByteTrack-Algorithmus eindeutige IDs zuweist und die genaue Spur jedes sich bewegenden Elements aufrechterhält.",
+      "project8.title": "TerraceM-3: Satelliten-KI-Assistent",
+      "project8.desc": "Mit TerraceM-3 können Sie mit der Präzision des ICESat-2-Satelliten 'chatten', um unseren Planeten sofort zu verstehen. Es wandelt komplexe Lasermessungen in visuelle Diagramme und klare Antworten um und beseitigt die technische Barriere für immer. Es ist der intelligente Assistent, der wissenschaftliche Daten in schnelle, einfache und umsetzbare Entscheidungen verwandelt. Mit TerraceM-3 ist fortschrittliche Satellitenwissenschaft jetzt so einfach wie eine Unterhaltung...",
       "contact.title": "Bereit, Ihr Projekt zu starten?",
       "contact.button": "Kontaktieren Sie uns über WhatsApp"
     }
@@ -99,6 +105,8 @@ const resources = {
       "project6.desc": "Il s'agit d'un tableau de bord IA d'analyse de données. En tant qu'utilisateur, vous téléchargez votre fichier (Excel ou CSV) et posez des questions directes en langage naturel. En arrière-plan, l'IA Azure OpenAI interprète votre requête et E2B exécute automatiquement et en toute sécurité du code Python pour créer et renvoyer le graphique que vous avez demandé, le tout en quelques secondes et sans nécessiter de compétences en programmation.",
       "project7.title": "Suivi d'Objets en Temps Réel",
       "project7.desc": "Suivi d'objets en action : pipeline de vision par ordinateur fonctionnant en temps réel. Le réseau de neurones YOLOv8 gère la détection image par image, tandis que l'algorithme ByteTrack attribue des identifiants uniques et maintient la trace exacte de chaque élément en mouvement.",
+      "project8.title": "TerraceM-3 : Assistant IA Satellitaire",
+      "project8.desc": "TerraceM-3 vous permet de 'discuter' avec la précision du satellite ICESat-2 pour comprendre notre planète instantanément. Il transforme des mesures laser complexes en graphiques visuels et en réponses claires, éliminant à jamais la barrière technique. C'est l'assistant intelligent qui transforme les données scientifiques en décisions rapides, simples et exploitables. Avec TerraceM-3, la science satellitaire avancée est désormais aussi simple qu'une conversation...",
       "contact.title": "Prêt à commencer votre projet ?",
       "contact.button": "Contactez-nous sur WhatsApp"
     }

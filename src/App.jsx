@@ -152,6 +152,18 @@ function App() {
               </div>
             </div>
 
+            <div className="stacked-project-card reverse-layout">
+              <div className="project-content">
+                <h3>{t('project8.title')}</h3>
+                <p>{t('project8.desc')}</p>
+              </div>
+              <div className="project-video-wrapper">
+                <video autoPlay loop muted playsInline controls>
+                  <source src="/TerraceM-3_Example.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+
           </div>
         </section>
       </main>
