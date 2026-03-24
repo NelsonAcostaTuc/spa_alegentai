@@ -172,7 +172,7 @@ function App() {
         <h2>{t('contact.title')}</h2>
         <p>Ready to build something amazing together?</p>
         <a 
-          href="https://wa.me/1234567890?text=Hello!%20I%20would%20like%20to%20discuss%20a%20project." 
+          href="https://wa.me/5493815301789?text=Hello!%20I%20would%20like%20to%20discuss%20a%20project." 
           className="whatsapp-btn"
           target="_blank"
           rel="noopener noreferrer"
