@@ -164,6 +164,18 @@ function App() {
               </div>
             </div>
 
+            <div className="stacked-project-card">
+              <div className="project-video-wrapper">
+                <video autoPlay loop muted playsInline controls>
+                  <source src="/n8n_example.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div className="project-content">
+                <h3>{t('project9.title')}</h3>
+                <p>{t('project9.desc')}</p>
+              </div>
+            </div>
+
           </div>
         </section>
       </main>

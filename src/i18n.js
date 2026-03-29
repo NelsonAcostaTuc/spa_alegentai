@@ -26,6 +26,8 @@ const resources = {
       "project7.desc": "Object Tracking in action: Computer vision pipeline operating in real-time. The YOLOv8 neural network handles frame-by-frame detection, while the ByteTrack algorithm assigns unique IDs and maintains the exact track of each moving element.",
       "project8.title": "TerraceM-3: Satellite AI Assistant",
       "project8.desc": "TerraceM-3 allows you to 'chat' with the precision of the ICESat-2 satellite to understand our planet instantly. It transforms complex laser measurements into visual charts and clear answers, eliminating the technical barrier forever. It is the intelligent assistant that turns scientific data into fast, simple, and actionable decisions. With TerraceM-3, advanced satellite science is now as simple as having a conversation...",
+      "project9.title": "n8n Automation for HR Benefits",
+      "project9.desc": "We optimize the processing of corporate reimbursements by automating data reconciliation between Excel spreadsheets and SAP SuccessFactors. The solution automatically crosses invoices and employee records to avoid manual errors, and integrates a virtual assistant with Artificial Intelligence that allows employees to check the status of their payments in real time using natural language.",
       "contact.title": "Ready to start your project?",
       "contact.button": "Contact us on WhatsApp"
     }
@@ -53,6 +55,8 @@ const resources = {
       "project7.desc": "Object Tracking en acción: Pipeline de visión computacional operando en tiempo real. La red neuronal YOLOv8 se encarga de la detección cuadro por cuadro, mientras que el algoritmo ByteTrack asigna IDs únicos y mantiene el rastro exacto de cada elemento en movimiento.",
       "project8.title": "TerraceM-3: Asistente Satelital con IA",
       "project8.desc": "TerraceM-3 te permite \"chatear\" con la precisión del satélite ICESat-2 para entender nuestro planeta al instante. Transforma mediciones láser complejas en gráficos visuales y respuestas claras, eliminando la barrera técnica para siempre. Es el asistente inteligente que convierte datos científicos en decisiones rápidas, sencillas y accionables. Con TerraceM-3, la ciencia satelital avanzada ahora es tan simple como tener una conversación...",
+      "project9.title": "Automatización en n8n para Beneficios de RRHH",
+      "project9.desc": "Optimizamos el procesamiento de reintegros corporativos automatizando la conciliación de datos entre planillas Excel y SAP SuccessFactors. La solución cruza facturas y legajos de forma automática para evitar errores manuales, e integra un asistente virtual con Inteligencia Artificial que permite a los colaboradores consultar el estado de sus pagos en tiempo real mediante lenguaje natural.",
       "contact.title": "¿Listo para comenzar tu proyecto?",
       "contact.button": "Contáctanos por WhatsApp"
     }
@@ -79,7 +83,9 @@ const resources = {
       "project7.title": "Echtzeit-Objektverfolgung",
       "project7.desc": "Objektverfolgung in Aktion: Computer Vision-Pipeline, die in Echtzeit arbeitet. Das neuronale Netzwerk YOLOv8 übernimmt die bildweise Erkennung, während der ByteTrack-Algorithmus eindeutige IDs zuweist und die genaue Spur jedes sich bewegenden Elements aufrechterhält.",
       "project8.title": "TerraceM-3: Satelliten-KI-Assistent",
-      "project8.desc": "Mit TerraceM-3 können Sie mit der Präzision des ICESat-2-Satelliten 'chatten', um unseren Planeten sofort zu verstehen. Es wandelt komplexe Lasermessungen in visuelle Diagramme und klare Antworten um und beseitigt die technische Barriere für immer. Es ist der intelligente Assistent, der wissenschaftliche Daten in schnelle, einfache und umsetzbare Entscheidungen verwandelt. Mit TerraceM-3 ist fortschrittliche Satellitenwissenschaft jetzt so einfach wie eine Unterhaltung...",
+      "project8.desc": "Mit TerraceM-3 können Sie mit der Präzision des ICESat-2-Satelliten 'chatten', um unseren Planeten sofort zu verstehen. Es wandelt komplexe Lasermessungen in visuelle Diagramme und klare Antworten um und beseitigt die technische Barriere für immer. Es ist der intelligente Assistent, der wissenschaftliche Daten in schnelle, einfache und umsetzbare Entscheidungen verwandelt. Mit TerraceM-3 ist fortsrittliche Satellitenwissenschaft jetzt so einfach wie eine Unterhaltung...",
+      "project9.title": "n8n-Automatisierung für HR-Benefits",
+      "project9.desc": "Wir optimieren die Abwicklung von Unternehmenserstattungen durch die Automatisierung des Datenabgleichs zwischen Excel-Tabellen und SAP SuccessFactors. Die Lösung gleicht Rechnungen und Mitarbeiterdaten automatisch ab, um manuelle Fehler zu vermeiden, und integriert einen virtuellen Assistenten mit künstlicher Intelligenz, der es den Mitarbeitern ermöglicht, den Status ihrer Zahlungen in Echtzeit in natürlicher Sprache abzufragen.",
       "contact.title": "Bereit, Ihr Projekt zu starten?",
       "contact.button": "Kontaktieren Sie uns über WhatsApp"
     }
@@ -107,6 +113,8 @@ const resources = {
       "project7.desc": "Suivi d'objets en action : pipeline de vision par ordinateur fonctionnant en temps réel. Le réseau de neurones YOLOv8 gère la détection image par image, tandis que l'algorithme ByteTrack attribue des identifiants uniques et maintient la trace exacte de chaque élément en mouvement.",
       "project8.title": "TerraceM-3 : Assistant IA Satellitaire",
       "project8.desc": "TerraceM-3 vous permet de 'discuter' avec la précision du satellite ICESat-2 pour comprendre notre planète instantanément. Il transforme des mesures laser complexes en graphiques visuels et en réponses claires, éliminant à jamais la barrière technique. C'est l'assistant intelligent qui transforme les données scientifiques en décisions rapides, simples et exploitables. Avec TerraceM-3, la science satellitaire avancée est désormais aussi simple qu'une conversation...",
+      "project9.title": "Automatisation n8n pour les avantages RH",
+      "project9.desc": "Nous optimisons le traitement des remboursements d'entreprise en automatisant le rapprochement des données entre les feuilles de calcul Excel et SAP SuccessFactors. La solution croise automatiquement les factures et les dossiers des employés pour éviter les erreurs manuelles, et intègre un assistant virtuel doté d'intelligence artificielle qui permet aux collaborateurs de consulter l'état de leurs paiements en temps réel en langage naturel.",
       "contact.title": "Prêt à commencer votre projet ?",
       "contact.button": "Contactez-nous sur WhatsApp"
     }
