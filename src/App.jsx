@@ -185,6 +185,18 @@ function App() {
               </div>
             </div>
 
+            <div className="stacked-project-card">
+              <div className="project-video-wrapper">
+                <video autoPlay loop muted playsInline controls>
+                  <source src="/agente_administrativo.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div className="project-content">
+                <h3>{t('project11.title') || 'ADMIN DISRUPTOR'}</h3>
+                <p>{t('project11.desc') || 'ADMIN DISRUPTOR es un agente virtual de "Guerrilla Jurisprudence" que democratiza la normativa del Instituto Técnico (UNT) mediante IA. Analiza documentos con OCR y una base vectorial de 20 leyes, garantizando rigor jurídico absoluto sin margen para la improvisación. Su diferencial es el sentido crítico: identifica vacíos y contradicciones legales, proponiendo soluciones y recursos administrativos proactivos. Es una herramienta estratégica diseñada para agilizar el acceso al derecho institucional y resolver conflictos burocráticos de forma eficiente.'}</p>
+              </div>
+            </div>
+
           </div>
         </section>
       </main>
