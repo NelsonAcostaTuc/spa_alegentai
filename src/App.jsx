@@ -192,8 +192,8 @@ function App() {
                 </video>
               </div>
               <div className="project-content">
-                <h3>{t('project11.title') || 'ADMIN DISRUPTOR'}</h3>
-                <p>{t('project11.desc') || 'ADMIN DISRUPTOR es un agente virtual de "Guerrilla Jurisprudence" que democratiza la normativa del Instituto Técnico (UNT) mediante IA. Analiza documentos con OCR y una base vectorial de 20 leyes, garantizando rigor jurídico absoluto sin margen para la improvisación. Su diferencial es el sentido crítico: identifica vacíos y contradicciones legales, proponiendo soluciones y recursos administrativos proactivos. Es una herramienta estratégica diseñada para agilizar el acceso al derecho institucional y resolver conflictos burocráticos de forma eficiente.'}</p>
+                <h3>{t('project11.title') || 'AIALEGENT JURISPRUDENCE'}</h3>
+                <p>{t('project11.desc') || 'AIALEGENT JURISPRUDENCE es un Agente Administrativo Virtual especializado en normativas institucionales. Mediante Inteligencia Artificial y OCR, democratiza el acceso al conocimiento legal. El sistema analiza documentos, extrae artículos precisos de bases de datos vectoriales e identifica vacíos legales, ofreciendo soluciones proactivas y recursos administrativos críticos para resolver conflictos institucionales con rigor.'}</p>
               </div>
             </div>
 
