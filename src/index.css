@@ -350,22 +350,24 @@ a {
 }
 
 .stacked-projects-container {
-  display: flex;
-  flex-direction: column;
-  gap: 8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
 }
 
 .stacked-project-card {
   display: flex;
-  align-items: center;
-  gap: 4rem;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2rem;
   background: linear-gradient(135deg, rgba(15, 20, 30, 0.8), rgba(5, 10, 15, 0.9));
   border: 1px solid var(--border-subtle);
   border-left: 3px solid var(--color-primary);
-  padding: 3rem;
+  padding: 2.5rem;
   position: relative;
   transition: all 0.4s ease;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  height: 100%;
 }
 .stacked-project-card::before {
   content: '';
@@ -394,13 +396,12 @@ a {
 }
 
 .stacked-project-card.reverse-layout {
-  flex-direction: row-reverse;
   border-left: 1px solid var(--border-subtle);
   border-right: 3px solid var(--color-primary);
 }
 
 .project-video-wrapper {
-  flex: 1.2;
+  order: 1;
   width: 100%;
   position: relative;
   background: #000;
@@ -434,8 +435,8 @@ a {
 }
 
 .project-content {
-  flex: 1;
-  padding: 1rem 0;
+  order: 2;
+  padding: 0;
 }
 
 .project-content h3 {
@@ -508,13 +509,13 @@ a {
 }
 
 @media (max-width: 1024px) {
+  .stacked-projects-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
   .stacked-project-card {
-    flex-direction: column;
     gap: 2.5rem;
     padding: 2rem;
-  }
-  .stacked-project-card.reverse-layout {
-    flex-direction: column;
   }
   .project-content {
     text-align: center;
