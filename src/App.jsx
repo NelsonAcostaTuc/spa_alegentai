@@ -43,16 +43,7 @@ function App() {
       <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="logo">ALEGENT</div>
         
-        <button className="mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
-
-        <nav className={menuOpen ? "nav-open" : ""}>
-          <a href="#home" onClick={() => setMenuOpen(false)}>{t('nav.home') || 'Home'}</a>
-          <a href="#about" onClick={() => setMenuOpen(false)}>{t('nav.about') || 'About'}</a>
-          <a href="#projects" onClick={() => setMenuOpen(false)}>{t('nav.projects') || 'Projects'}</a>
-          <a href="#contact" onClick={() => setMenuOpen(false)}>{t('nav.contact') || 'Contact'}</a>
-          
+        <div className="header-controls">
           <div className="lang-switcher" onClick={() => setLangOpen(!langOpen)}>
             <div className="current-lang">
               <img src={flags[i18n.language] || flags.en} alt={i18n.language} />
@@ -70,6 +61,17 @@ function App() {
               </div>
             )}
           </div>
+          
+          <button className="mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
+            {menuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
+
+        <nav className={menuOpen ? "nav-open" : ""}>
+          <a href="#home" onClick={() => setMenuOpen(false)}>{t('nav.home') || 'Home'}</a>
+          <a href="#about" onClick={() => setMenuOpen(false)}>{t('nav.about') || 'About'}</a>
+          <a href="#projects" onClick={() => setMenuOpen(false)}>{t('nav.projects') || 'Projects'}</a>
+          <a href="#contact" onClick={() => setMenuOpen(false)}>{t('nav.contact') || 'Contact'}</a>
         </nav>
       </header>
 
