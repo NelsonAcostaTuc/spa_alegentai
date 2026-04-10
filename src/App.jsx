@@ -43,36 +43,38 @@ function App() {
       <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="logo">ALEGENT</div>
         
-        <div className="header-controls">
-          <div className="lang-switcher" onClick={() => setLangOpen(!langOpen)}>
-            <div className="current-lang">
-              <img src={flags[i18n.language] || flags.en} alt={i18n.language} />
-              <span>{(i18n.language || 'en').toUpperCase()}</span>
-            </div>
-            {langOpen && (
-              <div className="lang-menu">
-                <div onClick={() => changeLanguage('ar')}><img src={flags.ar} alt="AR" /> AR</div>
-                <div onClick={() => changeLanguage('en')}><img src={flags.en} alt="EN" /> EN</div>
-                <div onClick={() => changeLanguage('de')}><img src={flags.de} alt="DE" /> DE</div>
-                <div onClick={() => changeLanguage('fr')}><img src={flags.fr} alt="FR" /> FR</div>
-                <div onClick={() => changeLanguage('pt')}><img src={flags.pt} alt="PT" /> PT</div>
-                <div onClick={() => changeLanguage('ja')}><img src={flags.ja} alt="JA" /> JA</div>
-                <div onClick={() => changeLanguage('it')}><img src={flags.it} alt="IT" /> IT</div>
-              </div>
-            )}
-          </div>
-          
-          <button className="mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
-            {menuOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
-        </div>
+        <div className="nav-container">
+          <nav className={menuOpen ? "nav-open" : ""}>
+            <a href="#home" onClick={() => setMenuOpen(false)}>{t('nav.home') || 'Home'}</a>
+            <a href="#about" onClick={() => setMenuOpen(false)}>{t('nav.about') || 'About'}</a>
+            <a href="#projects" onClick={() => setMenuOpen(false)}>{t('nav.projects') || 'Projects'}</a>
+            <a href="#contact" onClick={() => setMenuOpen(false)}>{t('nav.contact') || 'Contact'}</a>
+          </nav>
 
-        <nav className={menuOpen ? "nav-open" : ""}>
-          <a href="#home" onClick={() => setMenuOpen(false)}>{t('nav.home') || 'Home'}</a>
-          <a href="#about" onClick={() => setMenuOpen(false)}>{t('nav.about') || 'About'}</a>
-          <a href="#projects" onClick={() => setMenuOpen(false)}>{t('nav.projects') || 'Projects'}</a>
-          <a href="#contact" onClick={() => setMenuOpen(false)}>{t('nav.contact') || 'Contact'}</a>
-        </nav>
+          <div className="header-controls">
+            <div className="lang-switcher" onClick={() => setLangOpen(!langOpen)}>
+              <div className="current-lang">
+                <img src={flags[i18n.language] || flags.en} alt={i18n.language} />
+                <span>{(i18n.language || 'en').toUpperCase()}</span>
+              </div>
+              {langOpen && (
+                <div className="lang-menu">
+                  <div onClick={() => changeLanguage('ar')}><img src={flags.ar} alt="AR" /> AR</div>
+                  <div onClick={() => changeLanguage('en')}><img src={flags.en} alt="EN" /> EN</div>
+                  <div onClick={() => changeLanguage('de')}><img src={flags.de} alt="DE" /> DE</div>
+                  <div onClick={() => changeLanguage('fr')}><img src={flags.fr} alt="FR" /> FR</div>
+                  <div onClick={() => changeLanguage('pt')}><img src={flags.pt} alt="PT" /> PT</div>
+                  <div onClick={() => changeLanguage('ja')}><img src={flags.ja} alt="JA" /> JA</div>
+                  <div onClick={() => changeLanguage('it')}><img src={flags.it} alt="IT" /> IT</div>
+                </div>
+              )}
+            </div>
+            
+            <button className="mobile-menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
+              {menuOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          </div>
+        </div>
       </header>
 
       <main>

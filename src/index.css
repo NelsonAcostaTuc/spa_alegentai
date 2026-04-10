@@ -132,6 +132,18 @@ a {
   transition: all 0.3s ease;
 }
 
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .navbar.scrolled {
   padding: 0.8rem 5%;
   box-shadow: 0 4px 30px rgba(0, 240, 255, 0.1);
