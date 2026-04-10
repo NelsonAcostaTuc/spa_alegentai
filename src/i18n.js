@@ -200,6 +200,39 @@ const resources = {
       "contact.title": "プロジェクトを始める準備はできましたか？",
       "contact.button": "WhatsAppでお問い合わせください"
     }
+  },
+  it: {
+    translation: {
+      "nav.home": "Home",
+      "nav.about": "Chi Siamo",
+      "nav.projects": "Progetti",
+      "nav.contact": "Contatti",
+      "hero.title": "Alimentiamo il Futuro con l'IA Generativa",
+      "hero.subtitle": "Trasformiamo il tuo modo di lavorare con soluzioni di Intelligenza Artificiale che automatizzano i processi, analizzano dati complessi e aumentano la produttività della tua azienda.",
+      "about.title": "Chi Siamo",
+      "about.description": "Siamo una società di consulenza esperta in Intelligenza Artificiale Generativa. Progettiamo e implementiamo piattaforme su misura che risolvono problemi reali: dall'analisi automatizzata dei dati e dalla visione artificiale allo sviluppo di assistenti aziendali avanzati. Il nostro obiettivo è democratizzare l'accesso all'IA per aziende di qualsiasi settore, mettendo l'innovazione tecnologica a portata di clic.",
+      "projects.title": "I Nostri Progetti",
+      "project3.title": "Analisi delle Immagini con GenAI",
+      "project3.desc": "Piattaforma GenAI per l'analisi visiva avanzata di qualsiasi tipo di immagine. Come caso d'uso di rilievo, valuta immagini mediche (come le radiografie) e fornisce osservazioni dettagliate di ciò che analizza.",
+      "project4.title": "Assistente Finanziario IA",
+      "project4.desc": "Applicazione finanziaria basata su GenAI per l'analisi degli estratti conto, la previsione delle tendenze e approfondimenti di mercato basati sull'IA.",
+      "project5.title": "Piattaforma Vibecoding",
+      "project5.desc": "Piattaforma per generare applicazioni semplici tramite prompt, da condividere per aumentare la produttività aziendale. Il deploy dell'app generata avviene con un solo clic.",
+      "project6.title": "Dashboard IA per l'Analisi dei Dati",
+      "project6.desc": "Questa è una Dashboard IA per l'Analisi dei Dati. Come utente, carichi il tuo file (Excel o CSV) e fai domande dirette in linguaggio naturale. In background, l'IA di Azure OpenAI interpreta la tua richiesta ed E2B esegue in modo sicuro e automatico codice Python per creare e restituirti il grafico richiesto, il tutto in pochi secondi e senza bisogno di saper programmare.",
+      "project7.title": "Tracciamento degli Oggetti in Tempo Reale",
+      "project7.desc": "Tracciamento degli Oggetti in azione: Pipeline di visione artificiale che opera in tempo reale. La rete neurale YOLOv8 gestisce il rilevamento fotogramma per fotogramma, mentre l'algoritmo ByteTrack assegna ID univoci e mantiene la traccia esatta di ogni elemento in movimento.",
+      "project8.title": "TerraceM-3: Assistente Satellitare IA",
+      "project8.desc": "TerraceM-3 ti permette di 'chattare' con la precisione del satellite ICESat-2 per comprendere istantaneamente il nostro pianeta. Trasforma complesse misurazioni laser in grafici visivi e risposte chiare, eliminando per sempre la barriera tecnica. È l'assistente intelligente che trasforma i dati scientifici in decisioni rapide, semplici e attuabili. Con TerraceM-3, la scienza satellitare avanzata è ora semplice come una conversazione...",
+      "project9.title": "Automazione n8n per Benefit HR",
+      "project9.desc": "Ottimizziamo l'elaborazione dei rimborsi aziendali automatizzando la riconciliazione dei dati tra i fogli di calcolo Excel e SAP SuccessFactors. La soluzione incrocia automaticamente fatture e record dei dipendenti per evitare errori manuali e integra un assistente virtuale con Intelligenza Artificiale che consente ai collaboratori di verificare lo stato dei propri pagamenti in tempo reale utilizzando il linguaggio naturale.",
+      "project10.title": "Agente Pedagogico IA",
+      "project10.desc": "'Agente Pedagogico' completo che utilizza l'intelligenza artificiale per analizzare e processare documenti educativi in formato PDF. La sua architettura è divisa in un backend Python che gestisce l'estrazione del testo e l'analisi dei dati, e un frontend React per l'interazione. La piattaforma offre strumenti di visualizzazione avanzati, come grafici a ragnatela e reti di conoscenza, per facilitare il monitoraggio dell'apprendimento. Include un sistema di chat intelligente che consente agli utenti di interagire direttamente con i contenuti analizzati in modo dinamico. È una soluzione progettata per trasformare informazioni statiche in un ecosistema di apprendimento visivo, interattivo e automatizzato.",
+      "project11.title": "ADMIN DISRUPTOR",
+      "project11.desc": "ADMIN DISRUPTOR è un agente virtuale di 'Guerrilla Jurisprudence' che democratizza le normative dell'Istituto Tecnico (UNT) tramite IA. Analizza i documenti utilizzando l'OCR e un database vettoriale di 20 leggi, garantendo assoluto rigore giuridico senza spazio per l'improvvisazione. Il suo elemento differenziante è il pensiero critico: identifica lacune e contraddizioni legali, proponendo soluzioni amministrative proattive e ricorsi. È uno strumento strategico progettato per semplificare l'accesso al diritto istituzionale e risolvere i conflitti burocratici in modo efficiente.",
+      "contact.title": "Pronto a iniziare il tuo progetto?",
+      "contact.button": "Contattaci su WhatsApp"
+    }
   }
 };
 

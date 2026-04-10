@@ -27,7 +27,8 @@ function App() {
     de: "https://flagcdn.com/w20/de.png",
     fr: "https://flagcdn.com/w20/fr.png",
     pt: "https://flagcdn.com/w20/br.png",
-    ja: "https://flagcdn.com/w20/jp.png"
+    ja: "https://flagcdn.com/w20/jp.png",
+    it: "https://flagcdn.com/w20/it.png"
   };
 
   return (
@@ -218,6 +219,12 @@ function App() {
           </svg>
           {t('contact.button') || 'Connect via WhatsApp'}
         </a>
+      </footer>
+    </div>
+  );
+}
+
+export default App;a>
       </footer>
     </div>
   );
