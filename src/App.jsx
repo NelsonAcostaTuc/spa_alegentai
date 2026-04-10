@@ -66,6 +66,7 @@ function App() {
                 <div onClick={() => changeLanguage('fr')}><img src={flags.fr} alt="FR" /> FR</div>
                 <div onClick={() => changeLanguage('pt')}><img src={flags.pt} alt="PT" /> PT</div>
                 <div onClick={() => changeLanguage('ja')}><img src={flags.ja} alt="JA" /> JA</div>
+                <div onClick={() => changeLanguage('it')}><img src={flags.it} alt="IT" /> IT</div>
               </div>
             )}
           </div>
