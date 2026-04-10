@@ -134,6 +134,39 @@ const resources = {
       "contact.title": "Prêt à commencer votre projet ?",
       "contact.button": "Contactez-nous sur WhatsApp"
     }
+  },
+  pt: {
+    translation: {
+      "nav.home": "Início",
+      "nav.about": "Sobre Nós",
+      "nav.projects": "Projetos",
+      "nav.contact": "Contato",
+      "hero.title": "Impulsionando o Futuro com IA Generativa",
+      "hero.subtitle": "Transformamos a maneira como você trabalha com soluções de Inteligência Artificial que automatizam processos, analisam dados complexos e aumentam a produtividade da sua empresa.",
+      "about.title": "Quem Somos",
+      "about.description": "Somos uma consultoria especialista em Inteligência Artificial Generativa. Projetamos e implementamos plataformas sob medida que resolvem problemas reais: desde análise automatizada de dados e visão computacional até o desenvolvimento de assistentes corporativos avançados. Nosso objetivo é democratizar o acesso à IA para empresas de qualquer setor, colocando a inovação tecnológica a um clique de distância.",
+      "projects.title": "Nossos Projetos",
+      "project3.title": "Análise de Imagens com GenAI",
+      "project3.desc": "Plataforma de GenAI para a análise visual avançada de qualquer tipo de imagem. Como caso de uso de destaque, avalia imagens médicas (como radiografias) e fornece observações detalhadas do que analisa.",
+      "project4.title": "Assistente Financeiro com IA",
+      "project4.desc": "Aplicativo financeiro impulsionado por GenAI para análise de transações, previsão de tendências e relatórios de mercado com IA.",
+      "project5.title": "Plataforma Vibecoding",
+      "project5.desc": "Plataforma para gerar aplicativos simples por meio de prompts, para compartilhar e aumentar a produtividade em uma empresa. A implantação do aplicativo gerado é feita com um único clique.",
+      "project6.title": "Dashboard de IA para Análise de Dados",
+      "project6.desc": "Este é um Dashboard de IA para Análise de Dados. Como usuário, você faz upload do seu arquivo (Excel ou CSV) e faz perguntas diretas em linguagem natural. Nos bastidores, a IA do Azure OpenAI interpreta sua consulta e a E2B executa código Python de forma automática e segura para criar e devolver o gráfico que você solicitou, tudo em segundos e sem a necessidade de saber programar.",
+      "project7.title": "Rastreamento de Objetos em Tempo Real",
+      "project7.desc": "Rastreamento de Objetos em ação: Pipeline de visão computacional operando em tempo real. A rede neural YOLOv8 cuida da detecção quadro a quadro, enquanto o algoritmo ByteTrack atribui IDs únicos e mantém o rastro exato de cada elemento em movimento.",
+      "project8.title": "TerraceM-3: Assistente de Satélite com IA",
+      "project8.desc": "TerraceM-3 permite que você 'converse' com a precisão do satélite ICESat-2 para entender nosso planeta instantaneamente. Ele transforma medições a laser complexas em gráficos visuais e respostas claras, eliminando a barreira técnica para sempre. É o assistente inteligente que transforma dados científicos em decisões rápidas, simples e acionáveis. Com o TerraceM-3, a ciência de satélite avançada agora é tão simples quanto ter uma conversa...",
+      "project9.title": "Automação no n8n para Benefícios de RH",
+      "project9.desc": "Otimizamos o processamento de reembolsos corporativos automatizando a reconciliação de dados entre planilhas do Excel e o SAP SuccessFactors. A solução cruza faturas e registros de funcionários automaticamente para evitar erros manuais e integra um assistente virtual com Inteligência Artificial que permite aos colaboradores verificar o status de seus pagamentos em tempo real usando linguagem natural.",
+      "project10.title": "Agente Pedagógico com IA",
+      "project10.desc": "'Agente Pedagógico' abrangente que utiliza inteligência artificial para analisar e processar documentos educacionais em formato PDF. Sua arquitetura é dividida em um backend Python que gerencia a extração de texto e análise de dados, e um frontend em React para interação. A plataforma oferece ferramentas de visualização avançadas, como gráficos de radar e redes de conhecimento, para facilitar o acompanhamento do aprendizado. Inclui um sistema de bate-papo inteligente que permite aos usuários interagir diretamente com o conteúdo analisado dinamicamente. É uma solução projetada para transformar informações estáticas em um ecossistema de aprendizado visual, interativo e automatizado.",
+      "project11.title": "ADMIN DISRUPTOR",
+      "project11.desc": "ADMIN DISRUPTOR é um agente virtual de 'Guerrilla Jurisprudence' que democratiza as regulamentações do Instituto Técnico (UNT) por meio da IA. Ele analisa documentos usando OCR e um banco de dados vetorial de 20 leis, garantindo rigor jurídico absoluto sem margem para improvisação. Seu diferencial é o pensamento crítico: identifica lacunas e contradições legais, propondo soluções administrativas proativas e recursos. É uma ferramenta estratégica projetada para agilizar o acesso à lei institucional e resolver conflitos burocráticos de forma eficiente.",
+      "contact.title": "Pronto para iniciar seu projeto?",
+      "contact.button": "Contate-nos no WhatsApp"
+    }
   }
 };
 

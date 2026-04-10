@@ -25,7 +25,8 @@ function App() {
     ar: "https://flagcdn.com/w20/ar.png",
     en: "https://flagcdn.com/w20/us.png",
     de: "https://flagcdn.com/w20/de.png",
-    fr: "https://flagcdn.com/w20/fr.png"
+    fr: "https://flagcdn.com/w20/fr.png",
+    pt: "https://flagcdn.com/w20/br.png"
   };
 
   return (
@@ -61,6 +62,7 @@ function App() {
                 <div onClick={() => changeLanguage('en')}><img src={flags.en} alt="EN" /> EN</div>
                 <div onClick={() => changeLanguage('de')}><img src={flags.de} alt="DE" /> DE</div>
                 <div onClick={() => changeLanguage('fr')}><img src={flags.fr} alt="FR" /> FR</div>
+                <div onClick={() => changeLanguage('pt')}><img src={flags.pt} alt="PT" /> PT</div>
               </div>
             )}
           </div>

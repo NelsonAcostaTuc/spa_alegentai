@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alegent AI - Bi-Fold Flyer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background: #0f172a;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh;
+            -webkit-print-color-adjust: exact; 
+            print-color-adjust: exact;
+        }
+
+        :root {
+            --navy: #004362;
+            --teal: #008ba8;
+            --light-teal: #50cbfd;
+            --gray-text: #4a5568;
+            --light-gray: #f8f9fb;
+        }
+
+        .flyer-spread {
+            width: 297mm; 
+            height: 210mm; 
+            background: #fff; 
+            display: flex; 
+            box-shadow: 0 40px 80px -15px rgba(0, 0, 0, 0.6);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .page-left, .page-right { 
+            width: 148.5mm; 
+            height: 210mm; 
+            position: relative; 
+            overflow: hidden; 
+            flex-shrink: 0;
+        }
+
+        /* --- SHARED STYLES --- */
+        .architectural-mask {
+            clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
+        }
+
+        .diagonal-accent {
+            clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        }
+
+        .tech-pattern {
+            background-image: radial-gradient(var(--light-teal) 0.5px, transparent 0.5px);
+            background-size: 15px 15px;
+            opacity: 0.15;
+        }
+
+        /* --- LEFT PAGE --- */
+        .sidebar {
+            position: absolute; 
+            left: 0; 
+            top: 0; 
+            bottom: 0; 
+            width: 24mm; 
+            background: var(--navy); 
+            z-index: 30;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sidebar-logo {
+            background: white; 
+            height: 28mm; 
+            width: 100%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+        }
+
+        .sidebar-vertical-text {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%) rotate(-90deg);
+            white-space: nowrap;
+            color: white;
+            font-size: 9px;
+            font-weight: 800;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            width: 120mm;
+            text-align: center;
+            opacity: 0.6;
+        }
+
+        .sidebar-qr {
+            position: absolute; 
+            bottom: 12mm; 
+            width: 16mm; 
+            height: 16mm; 
+            background: white; 
+            padding: 1.5mm;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .left-main-content {
+            margin-left: 24mm;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-section {
+            height: 115mm;
+            background: var(--navy);
+            position: relative;
+            padding: 18mm 15mm;
+            color: white;
+        }
+
+        .hero-bg-img {
+            position: absolute;
+            inset: 0;
+            opacity: 0.1;
+            background: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-UbizeESmRgVjqaAxdz05HgBzVbuTKB5BxRGRVQoVwRoYq-U0ueSuHdBhLm8DsZCJDQGBzg1V6Kcg0LgszeKZq-FGkAXuZUhcSrg9njCZuvsTNo3rON-gS2vdXm1uH3w9Q4-ruQf69kIi6Af-rmEstbeQtfrBdZXY7bsXoJrKCR5Vi7LGWtLiU0KbPNGc2YcGyGA3uMQFcg4uGLy9JMze9HoO3DdCRQPxb-qdMDlLkWvoKvDeM6VgC0PvjnUlDHUIYwQD6tR6aA') center/cover;
+            filter: grayscale(100%);
+        }
+
+        .left-body {
+            flex: 1;
+            padding: 12mm 15mm;
+            background: #fff;
+            position: relative;
+        }
+
+        /* --- RIGHT PAGE --- */
+        .right-content {
+            padding: 18mm 15mm;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background: var(--light-gray);
+        }
+
+        .mission-box {
+            background: white;
+            border-left: 6px solid var(--light-teal);
+            padding: 8mm 10mm;
+            margin-bottom: 8mm;
+            box-shadow: 0 10px 30px -10px rgba(0,67,98,0.1);
+        }
+
+        .service-pill {
+            background: white;
+            border: 1px solid rgba(0,67,98,0.1);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 9px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: var(--navy);
+            display: inline-block;
+        }
+
+        .impact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4mm;
+        }
+
+        .impact-card {
+            background: white;
+            border: 1px solid rgba(0,67,98,0.05);
+            padding: 4mm;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .impact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 0%;
+            background: var(--light-teal);
+            transition: height 0.3s ease;
+        }
+
+        .impact-card:hover::before {
+            height: 100%;
+        }
+
+        .footer-stripe {
+            height: 3mm;
+            width: 100%;
+            background: linear-gradient(90deg, var(--navy) 0%, var(--teal) 50%, var(--light-teal) 100%);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .fold-line {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: rgba(0,0,0,0.08);
+            z-index: 100;
+        }
+
+        @media print {
+            body { background: none; }
+            .flyer-spread { box-shadow: none; }
+            .fold-line { display: none; }
+            @page { size: A4 landscape; margin: 0; }
+        }
+    </style>
+</head>
+<body>
+<div class="flyer-spread">
+<!-- --- LEFT PAGE (Front Cover & Core) --- -->
+<article class="page-left">
+<div class="sidebar">
+<div class="sidebar-logo"><div class="relative flex items-center justify-center w-16 h-16">
+<!-- Outer Geometric Frame -->
+<div class="absolute inset-0 border-2 border-primary/20 rotate-45 rounded-sm"></div>
+<div class="absolute inset-1 border border-primary/10 -rotate-12 rounded-sm"></div>
+<!-- Main Logo Mark -->
+<div class="relative w-12 h-12 bg-[#004362] flex items-center justify-center rounded-sm shadow-lg overflow-hidden">
+<!-- Gradient Accent Overlay -->
+<div class="absolute inset-0 bg-gradient-to-tr from-[#004362] via-transparent to-[#50cbfd]/30"></div>
+<!-- Stylized 'A' Construction -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="flex items-end gap-[1px]">
+<div class="w-1.5 h-6 bg-[#50cbfd] rounded-full transform -skew-x-12"></div>
+<div class="w-1.5 h-8 bg-white rounded-full"></div>
+<div class="w-1.5 h-6 bg-[#50cbfd] rounded-full transform skew-x-12"></div>
+</div>
+<div class="w-4 h-[2px] bg-white mt-[-8px] rounded-full"></div>
+</div>
+<!-- Corner Detail -->
+<div class="absolute top-0 right-0 w-4 h-4 bg-[#50cbfd] opacity-20 blur-sm"></div>
+</div>
+</div></div>
+<div class="sidebar-vertical-text">ALEGENT AI • PRECISION ARCHITECTURE</div>
+<div class="sidebar-qr">
+<img alt="QR Code" class="w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVVmFEkg2I9F8zgh81QytdXzdab0nQxE991rfMUuxhpP6_FYrmza8l9JpUZori8IdqUHOzMZWjOKO9qQgEBZY1GmZ3IPtV6jRb3cV177In2DZ_poEzIFnrZqi0OHhn6NZDni-s2tLKlh5LZAK9-b768P2-mhY1JT3YxIzbgwvx6-ol8jyZ5qTD31D_ael69OcxFVV49d6dfmTMYdQXAfzVRMoy4CPWX0scJoybnX7P6xWWtPOUsb-tDK6G-vlx76-PQaLzxDkdKA"/>
+</div>
+</div>
+<div class="left-main-content">
+<section class="hero-section architectural-mask">
+<div class="hero-bg-img"></div>
+<div class="relative z-10">
+<p class="text-[9px] font-black tracking-[0.5em] text-light-teal mb-6 uppercase" style="color: var(--light-teal)">Consultoría de Vanguardia</p>
+<h1 class="text-6xl font-black leading-[0.95] tracking-tighter mb-6">
+                        Intelligence<br/>by Architecture.
+                    </h1>
+<div class="h-1 w-20 bg-light-teal mb-6"></div>
+<p class="text-[11px] font-bold uppercase tracking-widest opacity-90 max-w-[280px]">Sistemas autónomos diseñados para la excelencia operativa.</p>
+</div>
+</section>
+<section class="left-body">
+<div class="mb-6">
+<h2 class="text-navy font-black uppercase tracking-tighter text-2xl mb-4" style="color: var(--navy)">Nosotros</h2>
+<p class="text-[12px] text-gray-text leading-relaxed font-semibold pr-8">
+                        Redefinimos la consultoría tecnológica a través de la <strong>Inteligencia por Arquitectura</strong>. No solo implementamos IA; construimos infraestructuras robustas, escalables y autónomas que transforman la investigación compleja en valor de mercado inmediato.
+                    </p>
+</div>
+<div class="flex flex-wrap gap-2 mb-8">
+<div class="service-pill">Analítica de datos</div>
+<div class="service-pill">Image analytics</div>
+<div class="service-pill">Agentes</div>
+<div class="service-pill">Dashboard</div>
+<div class="service-pill">RAG MULTIMODAL</div>
+</div>
+<div class="absolute bottom-8 left-15 right-15 flex justify-between items-end" style="left: 15mm; right: 15mm; z-index: 20; background: white; padding-top: 5mm;">
+<div class="border-l-2 border-light-teal pl-4">
+<p class="text-[8px] font-black uppercase tracking-widest text-teal" style="color: var(--teal)">Sede Central</p>
+<p class="font-extrabold text-navy text-[13px]" style="color: var(--navy)">Tucumán, Argentina</p>
+</div>
+<div class="text-right">
+<p class="text-[8px] font-black uppercase tracking-widest text-gray-text" style="color: var(--gray-text)">Operaciones Globales</p>
+<p class="font-extrabold text-navy text-[13px]" style="color: var(--navy)">+54 9 38 1530 1789</p>
+</div>
+</div>
+</section>
+</div>
+</article>
+<!-- --- RIGHT PAGE (Strategy & Impact) --- -->
+<article class="page-right">
+<div class="tech-pattern absolute inset-0 pointer-events-none"></div>
+<div class="right-content relative z-10">
+<div class="flex justify-between items-start mb-8">
+<div>
+<span class="text-[9px] font-black uppercase tracking-[0.4em] text-teal block mb-1" style="color: var(--teal)">Estrategia Digital</span>
+<h2 class="text-5xl font-black text-navy tracking-tighter leading-none" style="color: var(--navy)">¿Por qué<br/>Elegirnos?</h2>
+</div>
+<div class="text-right">
+<div class="text-navy font-black text-xl italic leading-none" style="color: var(--navy)">Alegent <span class="text-light-teal" style="color: var(--light-teal)">AI</span></div>
+<span class="text-[8px] font-bold tracking-[0.2em] text-gray-text uppercase">Innovation Lab</span>
+</div>
+</div>
+<div class="mission-box">
+<h3 class="font-black text-navy uppercase text-[10px] tracking-widest mb-2" style="color: var(--navy)">Nuestra Misión</h3>
+<p class="text-[12px] text-navy leading-relaxed font-bold italic opacity-90">
+                    "Democratizamos el acceso a la IA de alto rendimiento, permitiendo que la innovación arquitectónica esté al alcance de cada industria, a un solo clic de distancia."
+                </p>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-4 mb-4">
+<h3 class="font-black text-navy uppercase text-[10px] tracking-widest" style="color: var(--navy)">Impacto &amp; Casos</h3>
+<div class="flex-1 h-[1px] bg-gray-300"></div>
+</div>
+<div class="impact-grid">
+<!-- Case 1 -->
+<div class="impact-card">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-[14px] text-light-teal" style="color: var(--light-teal)">visibility</span>
+<h4 class="text-[10px] font-black text-navy uppercase">Visión Computacional</h4>
+</div>
+<p class="text-[9px] text-gray-text font-bold leading-tight">Foco en <strong>seguimiento de objetos en tiempo real</strong> utilizando <strong>YOLO V8</strong> y flujos de trabajo de visión computacional de alto rendimiento.</p>
+</div>
+<!-- Case 2 -->
+<div class="impact-card">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-[14px] text-light-teal" style="color: var(--light-teal)">dashboard</span>
+<h4 class="text-[10px] font-black text-navy uppercase">Data Intelligence</h4>
+</div>
+<p class="text-[9px] text-gray-text font-bold leading-tight"><strong>Tableros de IA</strong> (B2B) para análisis de datos, carga de archivos Excel, consultas automatizadas y entornos <strong>seguros en Python</strong>.</p>
+</div>
+<!-- Case 3 -->
+<div class="impact-card">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-[14px] text-light-teal" style="color: var(--light-teal)">account_balance_wallet</span>
+<h4 class="text-[10px] font-black text-navy uppercase">Fintech &amp; Dev</h4>
+</div>
+<p class="text-[9px] text-gray-text font-bold leading-tight"><strong>Asistente Financiero</strong> (transacciones, predicción de tendencias, reportes) y plataforma <strong>Bycoding Platform</strong>.</p>
+</div>
+<!-- Case 4 -->
+<div class="impact-card">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-[14px] text-light-teal" style="color: var(--light-teal)">rocket_launch</span>
+<h4 class="text-[10px] font-black text-navy uppercase">Advanced AI</h4>
+</div>
+<p class="text-[9px] text-gray-text font-bold leading-tight">Análisis de imágenes (médicas), asistentes satelitales (<strong>NASA ICESat-2</strong>), <strong>automatizaciones con N8N</strong> y agentes OCR con bases vectoriales.</p>
+</div>
+</div>
+</div>
+<div class="mt-auto relative pt-6">
+<div class="absolute -bottom-20 -right-20 w-48 h-48 bg-navy diagonal-accent opacity-5" style="background: var(--navy);"></div>
+<div class="flex justify-between items-center relative z-10 border-t-2 border-navy pt-5">
+<div class="space-y-0.5">
+<p class="text-[9px] font-black uppercase tracking-widest text-gray-text">Portal Digital</p>
+<p class="font-black text-navy text-[13px]" style="color: var(--navy)"><a class="font-black text-navy text-[13px] hover:underline" href="https://alegentai.com" style="color: var(--navy); text-decoration: none;">https://alegentai.com</a></p>
+</div>
+<div class="text-right space-y-0.5">
+<p class="text-[9px] font-black uppercase tracking-widest text-gray-text">Compromiso</p>
+<p class="font-black text-teal text-[13px]" style="color: var(--teal)">Innovación con Propósito</p>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-stripe"></div>
+</article>
+<!-- Fold Visual Aid (Screen only) -->
+<div class="fold-line"></div>
+</div>
+</body></html>

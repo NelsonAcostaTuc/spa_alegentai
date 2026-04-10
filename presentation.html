@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Alegent AI - Presentación Corporativa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #222;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        :root {
+            /* Paleta extraída de la guía: Navy Blue y Teal */
+            --navy: #004362;
+            --teal: #50cbfd;
+            --white: #ffffff;
+            --light-gray: #f4f7f6;
+            --dark-text: #1a2b3c;
+        }
+
+        .slide {
+            /* Formato 16:9 (Landscape A4 aprox) */
+            width: 297mm;
+            height: 210mm;
+            background: var(--white);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            page-break-after: always;
+            flex-shrink: 0;
+        }
+
+        @media print {
+            body { background: white; padding: 0; margin: 0; display: block; }
+            .slide { box-shadow: none; margin: 0; width: 297mm; height: 210mm; page-break-after: always; }
+            .slide:last-child { page-break-after: auto; }
+            @page { size: A4 landscape; margin: 0; }
+        }
+
+        /* Common Elements */
+        .header {
+            position: absolute;
+            top: 40px;
+            left: 50px;
+            z-index: 10;
+        }
+        .header h2 {
+            font-weight: 900;
+            color: var(--navy);
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+        .header h2 span { color: var(--teal); }
+
+        .title-main {
+            font-size: 56px;
+            font-weight: 900;
+            color: var(--navy);
+            line-height: 1.1;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .title-main span { color: var(--teal); }
+
+        /* S1: Portada */
+        .s1-bg {
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            background: var(--navy);
+            z-index: 1;
+        }
+        .s1-shape {
+            position: absolute;
+            top: 0; right: 0; bottom: 0; width: 60%;
+            background: var(--teal);
+            /* Forma geométrica angular */
+            clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+            z-index: 2;
+        }
+        .s1-content {
+            position: absolute;
+            top: 30%;
+            left: 80px;
+            width: 50%;
+            z-index: 10;
+            color: var(--white);
+        }
+        .s1-content h1 {
+            font-size: 64px;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+        .s1-content h1 span { color: var(--teal); }
+        .s1-content p {
+            font-size: 22px;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+        .s1-logo {
+            position: absolute;
+            bottom: 50px;
+            left: 80px;
+            font-size: 32px;
+            font-weight: 900;
+            color: var(--white);
+            z-index: 10;
+            letter-spacing: 2px;
+        }
+
+        /* S2: Quiénes Somos */
+        .s2-shape {
+            position: absolute;
+            top: 0; left: 0; width: 30%; height: 100%;
+            background: var(--navy);
+            clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+        }
+        .s2-content {
+            position: absolute;
+            top: 25%;
+            left: 35%;
+            width: 55%;
+        }
+        .s2-text {
+            font-size: 20px;
+            color: var(--dark-text);
+            line-height: 1.8;
+            margin-top: 30px;
+        }
+        .s2-text strong { color: var(--teal); }
+
+        /* S3: Nuestros Pilares */
+        .s3-content {
+            position: absolute;
+            top: 15%;
+            left: 50px;
+            width: calc(100% - 100px);
+        }
+        .pilares-grid {
+            display: flex;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .pilar-card {
+            flex: 1;
+            background: var(--light-gray);
+            padding: 40px 30px;
+            border-top: 5px solid var(--teal);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .pilar-icon {
+            width: 60px; height: 60px;
+            background: var(--navy);
+            color: var(--teal);
+            border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 28px; font-weight: 900; margin-bottom: 20px;
+        }
+        .pilar-card h3 {
+            font-size: 24px; color: var(--navy); margin-bottom: 15px; font-weight: 800;
+        }
+        .pilar-card p {
+            font-size: 15px; color: var(--dark-text); line-height: 1.6;
+        }
+
+        /* S4: Presencia Global / Proyectos */
+        .s4-bg {
+            position: absolute; top: 0; left: 0; width: 100%; height: 40%;
+            background: var(--navy);
+        }
+        .s4-header {
+            position: absolute; top: 50px; left: 50px; color: var(--white); z-index: 10;
+        }
+        .s4-header h2 { font-size: 48px; font-weight: 900; color: var(--white); }
+        .s4-header h2 span { color: var(--teal); }
+        .projects-grid {
+            position: absolute; top: 25%; left: 50px; width: calc(100% - 100px);
+            display: flex; gap: 30px; z-index: 10;
+        }
+        .project-card {
+            flex: 1; background: var(--white); padding: 40px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1); border-bottom: 5px solid var(--teal);
+        }
+        .project-card h4 { font-size: 22px; color: var(--navy); margin-bottom: 15px; font-weight: 800; }
+        .project-card p { font-size: 15px; color: var(--dark-text); line-height: 1.6; }
+
+        /* S5: Contacto */
+        .s5-shape {
+            position: absolute; bottom: 0; right: 0; width: 50%; height: 100%;
+            background: var(--teal); clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+        }
+        .s5-content {
+            position: absolute; top: 30%; left: 80px; width: 40%;
+        }
+        .contact-info { margin-top: 40px; }
+        .contact-item {
+            display: flex; align-items: center; gap: 15px; margin-bottom: 25px;
+            font-size: 20px; color: var(--navy); font-weight: 600;
+        }
+        .contact-icon {
+            width: 40px; height: 40px; background: var(--navy); color: var(--white);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px;
+        }
+        .qr-box {
+            position: absolute; top: 35%; right: 15%; width: 220px; height: 220px;
+            background: var(--white); padding: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-radius: 10px; z-index: 10; display: flex; align-items: center; justify-content: center;
+        }
+        .qr-box img { width: 100%; height: 100%; object-fit: contain; }
+    </style>
+</head>
+<body>
+
+    <!-- S1: Portada -->
+    <div class="slide">
+        <div class="s1-bg"></div>
+        <div class="s1-shape"></div>
+        <div class="s1-content">
+            <h1>ALEGENT AI<br><span>SOLUCIONES</span></h1>
+            <p>Arquitectura de Negocios y Precisión en cada proceso con IA Generativa.</p>
+        </div>
+        <div class="s1-logo">ALEGENT AI</div>
+    </div>
+
+    <!-- S2: Quiénes Somos -->
+    <div class="slide">
+        <div class="s2-shape"></div>
+        <div class="header" style="color: white; left: 30px;">
+            <h2 style="color: white;">ALEGENT <span>AI</span></h2>
+        </div>
+        <div class="s2-content">
+            <h2 class="title-main">QUIÉNES <span>SOMOS</span></h2>
+            <div class="s2-text">
+                <p>Somos una consultora experta en <strong>Inteligencia Artificial Generativa</strong>. Nos dedicamos a diseñar e implementar plataformas a medida que resuelven problemas reales: desde análisis de datos automatizados y visión computacional, hasta el desarrollo de asistentes corporativos avanzados.</p>
+                <br>
+                <p>Nuestro objetivo es democratizar el acceso a la IA para empresas de cualquier sector, haciendo que la <strong>innovación tecnológica</strong> esté a un clic de distancia.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- S3: Nuestros Pilares -->
+    <div class="slide">
+        <div class="header">
+            <h2>ALEGENT <span>AI</span></h2>
+        </div>
+        <div class="s3-content">
+            <h2 class="title-main" style="text-align: center;">NUESTROS <span>PILARES</span></h2>
+            <div class="pilares-grid">
+                <div class="pilar-card">
+                    <div class="pilar-icon">M</div>
+                    <h3>Management</h3>
+                    <p>Gestión inteligente de recursos y asistentes corporativos que optimizan la toma de decisiones estratégicas.</p>
+                </div>
+                <div class="pilar-card">
+                    <div class="pilar-icon">C</div>
+                    <h3>Creativity</h3>
+                    <p>Desarrollo de soluciones innovadoras, impulsando la creación a través de prompts y generación dinámica.</p>
+                </div>
+                <div class="pilar-card">
+                    <div class="pilar-icon">B</div>
+                    <h3>Business</h3>
+                    <p>Integración de IA para resolver problemas reales del negocio, democratizando el acceso a tecnología de punta.</p>
+                </div>
+                <div class="pilar-card">
+                    <div class="pilar-icon">A</div>
+                    <h3>Analysis</h3>
+                    <p>Análisis de datos automatizado, dashboards inteligentes y visión computacional para extraer insights precisos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- S4: Proyectos (Casos de Éxito) -->
+    <div class="slide">
+        <div class="s4-bg"></div>
+        <div class="s4-header">
+            <h2>CASOS DE <span>ÉXITO</span></h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h4>TerraceM-3</h4>
+                <p>Asistente Satelital con IA que permite "chatear" con la precisión del satélite ICESat-2. Transforma mediciones láser complejas en gráficos visuales y respuestas claras, eliminando barreras técnicas.</p>
+            </div>
+            <div class="project-card">
+                <h4>Vibecoding</h4>
+                <p>Plataforma para generar aplicaciones corporativas simples mediante prompts. Diseñada para compartir herramientas internas y aumentar la productividad con despliegues de un solo clic.</p>
+            </div>
+            <div class="project-card">
+                <h4>AI Data Dashboard</h4>
+                <p>Sube archivos Excel/CSV y realiza consultas en lenguaje natural. La IA ejecuta código Python automáticamente para generar gráficos precisos en segundos, sin requerir programación.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- S5: Contacto -->
+    <div class="slide">
+        <div class="s5-shape"></div>
+        <div class="header">
+            <h2>ALEGENT <span>AI</span></h2>
+        </div>
+        <div class="s5-content">
+            <h2 class="title-main">CONECTA<br><span>CON NOSOTROS</span></h2>
+            <p style="font-size: 18px; color: var(--dark-text); margin-bottom: 30px;">¿Listo para impulsar el futuro de tu empresa?</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">✉</div>
+                    <span>contact@alegent.ai</span>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <span>+54 9 11 1234 5678</span>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🌐</div>
+                    <span>www.alegent.ai</span>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <span>Buenos Aires, Argentina</span>
+                </div>
+            </div>
+        </div>
+        <div class="qr-box">
+            <!-- QR Code apuntando a Alegent AI -->
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.alegent.ai" alt="QR Code">
+        </div>
+    </div>
+
+</body>
+</html>
