@@ -185,13 +185,25 @@ function App() {
 
             <div className="stacked-project-card reverse-layout">
               <div className="project-content">
-                <h3>{t('project10.title') || 'Pedagogical Agent'}</h3>
-                <p>{t('project10.desc') || 'Interactive AI tutor leveraging LLMs to provide personalized learning experiences.'}</p>
+                <h3>Agente Financiero v2</h3>
+                <p>{t('video.description')}</p>
               </div>
+              <div className="project-video-wrapper">
+                <video autoPlay loop muted playsInline controls>
+                  <source src="/agente_financiero_v2.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+
+            <div className="stacked-project-card">
               <div className="project-video-wrapper">
                 <video autoPlay loop muted playsInline controls>
                   <source src="/agente_pedagogico.mp4" type="video/mp4" />
                 </video>
+              </div>
+              <div className="project-content">
+                <h3>{t('project10.title') || 'Pedagogical Agent'}</h3>
+                <p>{t('project10.desc') || 'Interactive AI tutor leveraging LLMs to provide personalized learning experiences.'}</p>
               </div>
             </div>
 

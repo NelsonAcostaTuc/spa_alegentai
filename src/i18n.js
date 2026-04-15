@@ -33,7 +33,8 @@ const resources = {
       "project11.title": "ADMIN DISRUPTOR",
       "project11.desc": "ADMIN DISRUPTOR is a 'Guerrilla Jurisprudence' virtual agent that democratizes the regulations of the Technical Institute (UNT) through AI. It analyzes documents using OCR and a vector database of 20 laws, ensuring absolute legal rigor with no room for improvisation. Its differentiator is critical thinking: it identifies legal gaps and contradictions, proposing proactive administrative solutions and appeals. It is a strategic tool designed to streamline access to institutional law and efficiently resolve bureaucratic conflicts.",
       "contact.title": "Ready to start your project?",
-      "contact.button": "Contact us on WhatsApp"
+      "contact.button": "Contact us on WhatsApp",
+      "video.description": "Interactive dashboard for Argentine exchange market analysis. View all dollar exchange rates (Official, Blue, MEP, CCL, Wholesale, Crypto and Card) in real-time alongside trend projections based on historical models. Features an AI assistant for personalized financial queries, risk assessment per instrument, and multilingual support. Built with React/TypeScript and Docker-deployed."
     }
   },
   ar: {
@@ -66,7 +67,8 @@ const resources = {
       "project11.title": "ADMIN DISRUPTOR",
       "project11.desc": "ADMIN DISRUPTOR es un agente virtual de \"Guerrilla Jurisprudence\" que democratiza la normativa del Instituto Técnico (UNT) mediante IA. Analiza documentos con OCR y una base vectorial de 20 leyes, garantizando rigor jurídico absoluto sin margen para la improvisación. Su diferencial es el sentido crítico: identifica vacíos y contradicciones legales, proponiendo soluciones y recursos administrativos proactivos. Es una herramienta estratégica diseñada para agilizar el acceso al derecho institucional y resolver conflictos burocráticos de forma eficiente.",
       "contact.title": "¿Listo para comenzar tu proyecto?",
-      "contact.button": "Contáctanos por WhatsApp"
+      "contact.button": "Contáctanos por WhatsApp",
+      "video.description": "Dashboard interactivo para el análisis del mercado cambiario argentino. Visualizá en tiempo real todas las cotizaciones del dólar (Oficial, Blue, MEP, CCL, Mayorista, Cripto y Tarjeta) junto con proyecciones de tendencia basadas en modelos históricos. Incluye un asistente con IA para consultas financieras personalizadas, evaluación de riesgo por instrumento y navegación multilingüe. Desarrollado con React/TypeScript y desplegado en Docker."
     }
   },
   de: {
@@ -99,7 +101,8 @@ const resources = {
       "project11.title": "ADMIN DISRUPTOR",
       "project11.desc": "Virtueller Agent, der die Vorschriften demokratisiert. Analysiert Dokumente mit OCR und einer Vektordatenbank von 20 Gesetzen. Identifiziert rechtliche Lücken und Widersprüche und schlägt proaktive administrative Lösungen vor.",
       "contact.title": "Bereit, Ihr Projekt zu starten?",
-      "contact.button": "Kontaktieren Sie uns über WhatsApp"
+      "contact.button": "Kontaktieren Sie uns über WhatsApp",
+      "video.description": "Interaktives Dashboard zur Analyse des argentinischen Devisenmarktes. Sehen Sie alle Dollarkurse (Offiziell, Blau, MEP, CCL, Großhandel, Krypto und Karte) in Echtzeit zusammen mit Trendprojektionen basierend auf historischen Modellen. Enthält einen KI-Assistenten für persönliche Finanzfragen, Risikobewertung pro Instrument und mehrsprachige Unterstützung. Entwickelt mit React/TypeScript und Docker-bereitgestellt."
     }
   },
   fr: {
@@ -132,7 +135,8 @@ const resources = {
       "project11.title": "ADMIN DISRUPTOR",
       "project11.desc": "Agent virtuel qui démocratise la réglementation grâce à l'IA. Il analyse les documents avec l'OCR et une base de données vectorielle de 20 lois. Il identifie les lacunes et les contradictions juridiques, proposant des solutions administratives proactives.",
       "contact.title": "Prêt à commencer votre projet ?",
-      "contact.button": "Contactez-nous sur WhatsApp"
+      "contact.button": "Contactez-nous sur WhatsApp",
+      "video.description": "Tableau de bord interactif pour l'analyse du marché des changes argentin. Visualisez en temps réel tous les taux du dollar (Officiel, Blue, MEP, CCL, Gros, Crypto et Carte) avec des projections de tendance basées sur des modèles historiques. Comprend un assistant IA pour des requêtes financières personnalisées, une évaluation des risques par instrument et un support multilingue. Développé avec React/TypeScript et déployé en Docker."
     }
   },
   pt: {
@@ -165,7 +169,8 @@ const resources = {
       "project11.title": "ADMIN DISRUPTOR",
       "project11.desc": "ADMIN DISRUPTOR é um agente virtual de 'Guerrilla Jurisprudence' que democratiza as regulamentações do Instituto Técnico (UNT) por meio da IA. Ele analisa documentos usando OCR e um banco de dados vetorial de 20 leis, garantindo rigor jurídico absoluto sem margem para improvisação. Seu diferencial é o pensamento crítico: identifica lacunas e contradições legais, propondo soluções administrativas proativas e recursos. É uma ferramenta estratégica projetada para agilizar o acesso à lei institucional e resolver conflitos burocráticos de forma eficiente.",
       "contact.title": "Pronto para iniciar seu projeto?",
-      "contact.button": "Contate-nos no WhatsApp"
+      "contact.button": "Contate-nos no WhatsApp",
+      "video.description": "Dashboard interativo para análise do mercado cambial argentino. Visualize em tempo real todas as cotações do dólar (Oficial, Blue, MEP, CCL, Atacadista, Cripto e Cartão) juntamente com projeções de tendência baseadas em modelos históricos. Inclui um assistente com IA para consultas financeiras personalizadas, avaliação de risco por instrumento e suporte multilíngue. Desenvolvido com React/TypeScript e implantado em Docker."
     }
   },
   ja: {
@@ -198,7 +203,8 @@ const resources = {
       "project11.title": "ADMIN DISRUPTOR",
       "project11.desc": "ADMIN DISRUPTORは、AIを通じて技術機関（UNT）の規制を民主化する「ゲリラ法学」仮想エージェントです。OCRと20の法律のベクトルデータベースを使用して文書を分析し、即興の余地のない絶対的な法的厳密性を確保します。その差別化要因は批判的思考です。法的ギャップや矛盾を特定し、プロアクティブな管理ソリューションや上訴を提案します。制度法へのアクセスを合理化し、官僚的な対立を効率的に解決するために設計された戦略的ツールです。",
       "contact.title": "プロジェクトを始める準備はできましたか？",
-      "contact.button": "WhatsAppでお問い合わせください"
+      "contact.button": "WhatsAppでお問い合わせください",
+      "video.description": "アルゼンチン為替市場分析用のインタラクティブダッシュボード。歴史的モデルに基づくトレンド予測とともに、すべてのドル為替レート（公式、ブルー、MEP、CCL、卸売、クリプト、カード）をリアルタイムで表示。パーソナライズされた金融クエリ用のAIアシスタント、instrumentごとのリスク評価、多言語サポートを備えています。React/TypeScriptで開発され、Dockerでデプロイ。"
     }
   },
   it: {
@@ -231,7 +237,8 @@ const resources = {
       "project11.title": "ADMIN DISRUPTOR",
       "project11.desc": "ADMIN DISRUPTOR è un agente virtuale di 'Guerrilla Jurisprudence' che democratizza le normative dell'Istituto Tecnico (UNT) tramite IA. Analizza i documenti utilizzando l'OCR e un database vettoriale di 20 leggi, garantendo assoluto rigore giuridico senza spazio per l'improvvisazione. Il suo elemento differenziante è il pensiero critico: identifica lacune e contraddizioni legali, proponendo soluzioni amministrative proattive e ricorsi. È uno strumento strategico progettato per semplificare l'accesso al diritto istituzionale e risolvere i conflitti burocratici in modo efficiente.",
       "contact.title": "Pronto a iniziare il tuo progetto?",
-      "contact.button": "Contattaci su WhatsApp"
+      "contact.button": "Contattaci su WhatsApp",
+      "video.description": "Dashboard interattiva per l'analisi del mercato dei cambi argentino. Visualizza in tempo reale tutti i tassi del dollaro (Ufficiale, Blue, MEP, CCL, Ingrosso, Cripto e Carta) insieme alle proiezioni di tendenza basate su modelli storici. Include un assistente IA per query finanziarie personalizzate, valutazione del rischio per strumento e supporto multilingue. Sviluppato con React/TypeScript e distribuito con Docker."
     }
   }
 };
